@@ -1,0 +1,9 @@
+[package]
+name = "query_params"
+version = "0.1.0"
+authors = ["Michael Sproul <micsproul@gmail.com>"]
+
+[dependencies]
+
+iron = "0.2"
+urlencoded = "0.2"
