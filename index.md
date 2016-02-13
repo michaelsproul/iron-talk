@@ -15,7 +15,7 @@ Same reasons you'd use Rust for anything else:
 
 # What is Iron?
 
-![](iron.png)
+![](images/iron.png)
 
 Framework for building web apps, built atop the [Hyper][] HTTP library.
 
@@ -26,7 +26,13 @@ I/O is blocking. For non-blocking see [MIO][mio].
 
 # Structure
 
-[[Diagram]]
+![](images/middleware_web.svg)
+
+```rust
+trait AroundMiddleware {
+    fn around(self, handler: Box<Handler>) -> Box<Handler>;
+}
+```
 
 # What can it do?
 
