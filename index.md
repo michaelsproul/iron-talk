@@ -28,7 +28,13 @@ I/O is blocking. For non-blocking see [MIO][mio].
 
 ![](images/middleware_web.svg)
 
+. . .
+
 ```rust
+trait Handler: Send + Sync + Any {
+    fn handle(&self, &mut Request) -> IronResult<Response>;
+}
+
 trait AroundMiddleware {
     fn around(self, handler: Box<Handler>) -> Box<Handler>;
 }
