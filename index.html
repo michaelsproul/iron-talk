@@ -66,8 +66,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <section>
   <h1 class="title">Web Programming using Iron</h1>
-  <h2 class="author">Michael Sproul</h2>
-  <h3 class="date">February 16th, 2016</h3>
+  <p class="author">Michael Sproul</p>
+  <p class="date">February 16th, 2016</p>
 </section>
 
 <section id="why-use-rust-for-web-servers" class="slide level1">
@@ -252,7 +252,7 @@ Iron::new(handler).http(<span class="st">&quot;0.0.0.0:3000&quot;</span>).unwrap
 <ul>
 <li><a href="https://github.com/brson/httptest">Brian Anderson's wonderful intro to making apps with Iron</a>.</li>
 <li><a href="https://github.com/iron">Iron organisation on Github</a>.</li>
-<li><a href="https://githu.com/michaelsproul/festivus">My Festivus project</a>, a time-series database backed by Postgres.</li>
+<li><a href="https://github.com/michaelsproul/festivus">My Festivus project</a>, a time-series database backed by Postgres.</li>
 </ul>
 </section>
 <section id="thanks" class="slide level1">
@@ -274,7 +274,7 @@ Iron::new(handler).http(<span class="st">&quot;0.0.0.0:3000&quot;</span>).unwrap
         dependencies: [
           { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
         ]
       });
     </script>
