@@ -218,4 +218,4 @@ At the moment Iron achieves 23.7% the performance of the fastest implementation 
 [mio]: https://github.com/carllerche/mio
 [Hyper]: https://github.com/hyperium/hyper
 [Diesel]: https://github.com/sgrif/diesel
-[festivus]: https://githu.com/michaelsproul/festivus
+[festivus]: https://github.com/michaelsproul/festivus
